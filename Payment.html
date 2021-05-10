@@ -1,0 +1,179 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/util.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Payment</title>
+    <style>
+        body
+        {
+            background-color: rgb(223, 244, 252);
+            text-align: center;
+           
+        }
+        .row
+        {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin: 0 -16px;
+        }
+
+        .col-50
+        {
+            -ms-flex: 50%;
+            flex: 50%;
+        }
+
+        .col-75
+        {
+            -ms-flex: 75%;
+            flex: 75%;
+        }
+        
+        .container
+        {
+            background-color: #f2f2f2;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid lightgrey;
+            border-radius: 3px;
+        }
+        .col-50, .col-75
+        {
+            padding: 0 16px;
+        }
+        input[type=text]
+        {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        label
+        {
+            margin-bottom: 20px;
+            display: block;
+        }
+        .icon-container
+        {
+            margin-top: 20px;
+            padding: 7px 0;
+            font-size: 24px;
+        }
+
+        .btn
+        {
+            font-size: 17px;
+            cursor: pointer;
+            border-radius: 3px;
+            width: 100%;
+            border: none;
+            margin: 10px;
+            padding: 12px;
+            color: black;
+        }
+
+        .btn:hover
+        {
+            background-color: #45a049;
+        }
+
+        
+    </style>
+</head>
+<body>
+  <div class="row">
+      <div class="col-75">
+          <div class="container">
+              <form action="/action_page.php">
+                    <div class="row">
+                        <div class="col-50">
+                            <h3>Billing Address</h3>
+                            <br><br>
+                           
+                            <label for="fname"><i class="fa fa-user"> <img src="images/name.png" alt="" width="30px" height="30px"> </i>Full Name</label>
+                                        
+                            <input type="text" name="First Name" id="fname" placeholder="Clearance T. Morumudi">
+                                        
+                            <label for="email"><i class="fa fa-envelope"><img src="images/email.png" alt="" width="30px" height="30px"> </i>Email</label>
+                                        
+                            <input type="text" name="email" id="email" placeholder="clearance@example.com">
+                                        
+                            <label for="adr"><i class="fa fa-address-card-o"><img src="images/address.png" alt="" width="30px" height="30px"></i>Address</label>
+                                        
+                            <input type="text" name="address" id="adr" placeholder="542 W. 15th street">
+                                            
+                            <label for="City"><i class="fa fa-institution"><img src="images/skyscrapers.png" alt="" width="30px" height="30px"></i>City</label>
+                                            
+                            <input type="text" name="city" id="city" placeholder="New york">
+                                            
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="state">State</label>
+                                                
+                                    <input type="text" name="" id="State" placeholder="NY">
+                                </div>
+                                          <br>      
+                                <div class="col-50">
+                                    <label for="Zip">Zip</label>
+                                    <input type="text" name="Zip" id="zip" placeholder="10001">
+                                </div>
+                            </div>
+                        </div>
+                            <br>
+                        <div class="col-50">
+                            <h3>Payment</h3>
+                            <br><br>
+                            <label for="fname">Accepted Cards</label>
+                            <div class="icon-container">
+                                <i class="fa  fa-cc-visa" style="color: navy;"><img src="images/visa.png" alt="Visa" width="85px" height="80px"></i>
+                                <i class="fa fa-cc-amex" style="color: blue;"><img src="images/amex.png" alt="amarican card" width="85px" height="80px"></i>
+                                <i class="fa fa-cc-matsercard" style="color: red;"><img src="images/mastercard-credit-card.png" alt="Master Card" width="85px" height="80"></i>
+                                <i class="fa fa-cc-discover" style="color: orange;"><img src="images/discover.png" alt="discover"width="85px" height="80px" ></i>
+                            </div>
+                            <label for="cname">Name on the Card</label>
+                            <input type="text" name="cardname" id="cname" placeholder="Mr C.Morumudi">
+
+                            <label for="ccnum">Credit Card number</label>
+                            <input type="text" name="cardnumber" id="ccnum" placeholder="1111-2222-3333-4444">
+
+                            <label for="expmonth">Exp Month</label>
+                            <input type="text" name="expmonth" id="expmonth" placeholder="August">
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="expyear">Exp Year</label>
+                                    <input type="text" name="expyear" id="expyear" placeholder="2020">
+                                </div>
+                                <br>
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                   <input type="text" name="cvv" id="cvv" placeholder="198">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="">
+                                <input type="checkbox" name="sameadr" id=""> I confirm that the above information is right and correct and it is mine.
+                            </label>
+                        </div>
+
+                       
+                       
+                    </div>
+            </form>
+            <div>
+                <label for="">
+                    <a href="Feeback.html" class="btn btn-danger" >Submit</a>
+                </label>
+            </div>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
